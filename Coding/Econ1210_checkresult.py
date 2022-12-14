@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[13]:
-
 def check():
     import pandas as pd
     import numpy as np
@@ -14,8 +9,8 @@ def check():
     c = maskpass.advpass("Your UID: ")
     d=input("Total number of questions: ")
     
-    excel1 = pd.read_excel("Coding/Sources/"+a)
-    excel2 = pd.read_excel("Coding/Sources/Finalanswers-release.xlsx")
+    excel1 = pd.read_excel("Sources/"+a)
+    excel2 = pd.read_excel("Sources/Finalanswers-release.xlsx")
 
     MyAns=excel1.iloc[:-1,[1]].astype(str)
     ModelAns=excel2.iloc[4:,[3]].reset_index().iloc[:,[1]]
