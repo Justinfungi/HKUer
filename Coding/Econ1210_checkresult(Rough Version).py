@@ -12,6 +12,7 @@ import maskpass
 
 a=input("filename of your ans: ")
 c = maskpass.advpass("Your UID: ")
+d=input("Total number of questions: ")
 
 excel1 = pd.read_excel("Sources/"+a)
 excel2 = pd.read_excel("Sources/Finalanswers-release.xlsx")
@@ -43,5 +44,4 @@ for i in range(len(a)):
         print(a[i],b[i])
 
 print("--"*20)
-print("Rough result:",(71-(len(a)-count)/71))
-
+print("Rough result:",(int(d)-(len(a)-count)/int(d)))
